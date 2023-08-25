@@ -18,18 +18,17 @@ html {
 body {
     color: #060315;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
     height: 100vh;
 }
 
-header, ul { 
+header, header ul { 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
     list-style: none;
 } 
 
-li {
+header li {
     padding: 25px;
     font-size: 20px;
 }
@@ -108,6 +107,60 @@ main img {
 
 .button-a > span {
     white-space: nowrap; 
+}
+
+.about {
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.about h1 {
+    color: #0358a4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about span {
+    color: #0358a4;
+    font-weight: 600;
+}
+
+.about p {
+    margin: 20px;
+    color: #060315;
+    font-size: 25px;
+    padding-right: 20px;
+}
+
+.about a {
+    text-decoration: none;
+    color: #0358a4;
+}
+
+table + p {
+    text-align: center;
+}
+
+table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-spacing: 20px;
+}
+
+td {
+    border: 1px solid #0358a4;
+    border-radius: 25px;
+    color: #0358a4;
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+td:hover{
+    background-color: #0358a4;
+    color: #ffffff;
 }
 
 @keyframes bounce {
