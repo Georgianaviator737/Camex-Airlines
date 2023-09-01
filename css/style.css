@@ -37,15 +37,15 @@ header img {
     width: 50%;
 }
 
-svg {
-    border-radius: 50%;
+aside i {
     bottom: 50px;
     right: 50px;
-    height: 60px;
     position: fixed;
+    border-radius: 50%;
+    background-color: #fff;
 }
 
-svg:hover {
+aside i:hover {
     animation: bounce 1s forwards;
 }
 
@@ -120,12 +120,13 @@ main img {
     margin-bottom: 20px;
 }
 
-.about span {
+p + h1 {
     color: #0358a4;
-    font-weight: 600;
+    font-weight: 500;
+    text-align: center;
 }
 
-.about p {
+h1 + p, table + p {
     margin: 20px;
     color: #060315;
     font-size: 25px;
@@ -150,17 +151,50 @@ table {
 
 td {
     border: 1px solid #0358a4;
-    border-radius: 25px;
-    color: #0358a4;
+    border-radius: 10px;
+    height: 150px;
+    background-color: #0358a4;
+    color: #fff;
     font-size: 25px;
     padding: 10px;
     cursor: pointer;
-    transition: 1s;
+    text-align: center;
 }
 
-td:hover{
+td p {
+    display: block;
+    color:#fff;
+    margin-top: 10px;
+}
+
+div + h1 {
+    color: #0358a4;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.social-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.social-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
     background-color: #0358a4;
-    color: #ffffff;
+    transition: .3s ease-in;
+}
+
+.social-card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 @keyframes bounce {
@@ -168,6 +202,6 @@ td:hover{
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-10px);
+        transform: translateY(-5px);
     }
 }
